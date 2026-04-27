@@ -382,13 +382,18 @@
   });
 
   function formatDate(date) {
+    var dd = date.getDate();
+    var mm = date.getMonth() + 1;
+    var yyyy = date.getFullYear();
 
-    return date.toLocaleDateString(sprache.replace('_', '-'), {
-      month: "long",
-      day: "numeric",
-      year: "numeric"
-    });
+    if (dd < 10) {
+      dd = '0' + dd
+    }
+    if (mm < 10) {
+      mm = '0' + mm
+    }
 
+    return yyyy + '年' + mm + '月' + dd + '日';
   }
 
   var dlqi_values = i18n[sprache]["pdf_dlqi_values"]; //["无", "一点", "相当多", "非常多"];

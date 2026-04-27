@@ -33,6 +33,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+  <script src="js/language.js"></script>
+  <script src="js/language_settings.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -122,9 +124,9 @@
         </div>
 
 
-        <div id="logos" class="row justify-content-center" style="margin-top: 30px; display: none;">
+        <div id="logos" class="row justify-content-center" style="margin-top: 30px;">
           <div class="col-lg-">
-            <img src="img/new_sanofi.png" height="30px">
+            <!-- <img src="img/new_sanofi.svg" height="30px"> -->
           </div>
           <div class="col-lg-" style="width: 10px;"></div>
           <div id="regeneron" class="col-lg-">
@@ -162,7 +164,6 @@
   <!--<div class="img_sanofi">
 			<img src="img/logo_sanofigenzyme.png"/>
 		</div>-->
-  <script src="js/language.js"></script>
   <!--<script src="js/languages/es.js"></script>-->
   <!--<script src="js/languages/nl_NL.js"></script>-->
   <!--<script src="js/languages/es_CL.js"></script>-->
@@ -170,20 +171,10 @@
   <!--<script>
     document.write(`<script src="js/languages/${sprache}.js"><\/script>`);
   </script>-->
-  <script src ="js/language_settings.js"></script>
 
-  <script src="js/beans/scorad.js"></script>
-  <script src="js/beans/easi.js"></script>
-  <script src="js/beans/nrs.js"></script>
   <script src="js/beans/dlqi.js"></script>
-  <script src="js/beans/poem.js"></script>
-  <script src="js/beans/viga.js"></script>
-  <script src="js/beans/adct.js"></script>
-  <script src="js/beans/pct.js"></script>
-    <script src="js/beans/salt.js"></script>
+  <script src="js/beans/salt.js"></script>
   <script src="js/beans/aas.js"></script>
-  <script src="js/beans/t2.js"></script>
-  <script src="js/scorad.js"></script>
   <script src="js/cookie.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
@@ -555,29 +546,14 @@
 
     if ($(this).hasClass("fa-redo")) {
 
-      scorad.destroy()
-      easi.destroy()
       dlqi.destroy()
-      nrs.destroy()
-      poem.destroy()
-      viga.destroy()
-      adct.destroy()
-      pct.destroy();
       salt.destroy();
       aas.destroy();
-      t2.destroy();
 
 
-      $(".scorad #mild_result").removeClass().addClass("gray")
-      $(".easi #mild_result").removeClass().addClass("gray")
       $(".dlqi #mild_result").removeClass().addClass("gray")
-      $(".viga #mild_result").removeClass().addClass("gray")
-      $(".poem #mild_result").removeClass().addClass("gray")
-      $(".adct #mild_result").removeClass().addClass("gray")
-      $(".pct #mild_result").removeClass().addClass("gray")
       $(".salt #mild_result").removeClass().addClass("gray")
       $(".aas #mild_result").removeClass().addClass("gray")
-      $(".t2 #mild_result").removeClass().addClass("gray")
 
       window.onload()
 

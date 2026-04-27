@@ -48,7 +48,7 @@
               <div class="region-image-container">
                 <div style="background-image:url('img/枕叶 (24%).png'); background-size: cover" class="region-thumbnail"
                      rel="img/枕叶 (24%).png"></div>
-                <div class="middle lupa"><a><img src="img/lupa.svg"></a></div>
+                <div class="middle lupa"><a href="img/枕叶 (24%).png"><img src="img/lupa.svg"></a></div>
               </div>
               <h4 id="aas_occipital_title" class="black_title">枕部（24%）</h4>
             </div>
@@ -63,7 +63,7 @@
               <div class="region-image-container">
                 <div style="background-image:url('img/左侧颞叶 (18%).png'); background-size: cover" class="region-thumbnail"
                      rel="img/左侧颞叶 (18%).png"></div>
-                <div class="middle lupa"><a><img src="img/lupa.svg"></a></div>
+                <div class="middle lupa"><a href="img/左侧颞叶 (18%).png"><img src="img/lupa.svg"></a></div>
               </div>
               <h4 id="aas_left_temporal_title" class="black_title">左颞部（18%）</h4>
             </div>
@@ -78,7 +78,7 @@
               <div class="region-image-container">
                 <div style="background-image:url('img/右侧颞叶 (18%).png'); background-size: cover" class="region-thumbnail"
                      rel="img/右侧颞叶 (18%).png"></div>
-                <div class="middle lupa"><a><img src="img/lupa.svg"></a></div>
+                <div class="middle lupa"><a href="img/右侧颞叶 (18%).png"><img src="img/lupa.svg"></a></div>
               </div>
               <h4 id="aas_right_temporal_title" class="black_title">右颞部（18%）</h4>
             </div>
@@ -93,7 +93,7 @@
               <div class="region-image-container">
                 <div style="background-image:url('img/头顶 (40%).png'); background-size: cover" class="region-thumbnail"
                      rel="img/头顶 (40%).png"></div>
-                <div class="middle lupa"><a><img src="img/lupa.svg"></a></div>
+                <div class="middle lupa"><a href="img/头顶 (40%).png"><img src="img/lupa.svg"></a></div>
               </div>
               <h4 id="aas_vertex_title" class="black_title">顶部（40%）</h4>
             </div>
@@ -158,13 +158,20 @@
   <script src="js/scorad_gral.js"></script>
   <script src="js/aas_calc.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
-  <script src="https://cdn.jsjsecond.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 
   <script type="text/javascript">
 
     $(document).ready(() => {
 
       $(".title_page").html(i18n[sprache]["aas_title"]);
+
+      // 初始化fancybox
+      $('.lupa a').fancybox({
+        type: 'image',
+        autoSize: true,
+        closeClick: true
+      });
 
     })
 

@@ -95,7 +95,7 @@ path{
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  font-size:large;
+  font-size:1.8rem;
   padding: 10px;
 }
 
@@ -244,25 +244,27 @@ ul.regla li a:hover {
     position: relative;
     overflow: hidden;
     border-radius: 37px;
-    width: 80%;
-    padding: 0;
-    height: 75px;
+    width: 90%;
+    padding: 10px;
+    height: 100px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 25px;
     cursor: pointer;
 }
 
 .home h2 {
     text-align: left;
-    line-height: 2.4rem;
+    line-height: 2.8rem;
     margin:0;
     margin-top: 5px;
     margin-left: 15px;
+    font-size: 1.8rem;
 }
 .home #mild_result {
     text-align: left;    
-    line-height: 0rem;
+    line-height: 1.2rem;
     margin-left: 15px;
+    font-size: 1.4rem;
 }
 
 .home .col-lg-10 {
@@ -270,8 +272,8 @@ ul.regla li a:hover {
 }
 .home .result-block {
     background-color: transparent!important;
-    margin-top: 9px;
-    font-size: 1.5em;    
+    margin-top: 15px;
+    font-size: 1.8em;    
 } 
 ul.regla2 {
     background-color: #dddbdb;
